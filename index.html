@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Verification</title>
+    <!-- Linking CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Eater&family=Fascinate+Inline&family=Fontdiner+Swanky&family=Fuzzy+Bubbles:wght@400;700&family=Henny+Penny&family=Rubik+Distressed&family=Zeyada&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+
+    <div class="main" style="display: flex; justify-content: center;align-items: center;">
+        <h2 style="font-family: 'Rubik Distressed', system-ui;font-weight: 100;  font-style: normal;">Password
+            Verification</h2>
+        <div class="main__section" >
+            <label>Name</label>
+            <div class="input">
+                <i class="fa-solid fa-user" style="color: #8fd6c1;"></i>
+                <input type="text" placeholder="Enter Your Name" id="name" required autocomplete="off">
+                
+            </div>
+            <p id="nameError" style="display: none;"></p>
+        </div>
+        <div class="main__section" >
+            <label>Password</label>
+            <div class="input">
+                <i class="fa-solid fa-lock" style="color: #8fd6c1;"></i>
+                <input type="password" placeholder="Enter Your Password" id="pw" required autocomplete="off" >
+                <i class="fa-solid fa-eye" style="color: #8fd6c1;cursor: pointer;" onclick="togglePassword()"></i>
+            </div>
+            <p id="pwError" style="display: none;"></p>
+        </div>
+        <div class="main__section" >
+            <label>Confirm Password</label>
+            <div class="input">
+                <i class="fa-solid fa-lock" style="color: #8fd6c1;"></i>
+                <input type="password" placeholder="Re-type Password" id="repw" required autocomplete="off">
+                <i class="fa-solid fa-eye" style="color: #8fd6c1;cursor: pointer;"onclick="toggleRePassword()"></i>
+            </div>
+            <p id="rePwerror" style="display: none;"></p>
+        </div>
+        <button id="btn">Verify</button>
+    </div>
+    <!-- Script -->
+
+    <script src="script.js"></script>
+</body>
+
+</html>
